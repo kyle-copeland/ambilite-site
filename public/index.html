@@ -1,0 +1,36 @@
+<html>
+<head>
+	<title>Ambilite</title>
+
+	<!-- Bootstrap-->
+	<link rel="stylesheet" type="text/css" href="/components/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container" ng-app="myApp">
+		<div class="row"><div class="col-xs-12">
+		<h1 class="text-center">Ambilite</h1>
+		</div></div>
+		<div class="row">
+		<ul class="nav nav-pills nav-justified" ng-controller="navCtrl">
+			<li ng-repeat="panel in panels" ng-class="{active:isActive('/'+panel)}"><a ng-href="#/{{panel}}">{{panel}}</a></li>
+		</ul>
+		</div>
+		<div class="row">
+		<div ng-view></div>
+		</div>
+	</div>
+	
+	<!--Libraries-->
+	<!--Angular-->
+	<script src="/components/angular/angular.min.js"></script>
+	<!--Angular Router-->
+	<script src="/components/angular-route/angular-route.min.js"></script>
+	<!--Angular UI-->
+	<script src="/components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+	<!-- App-->
+	<script src="/javascripts/app.js"></script>
+	<!--Controllers-->
+	<script src="/javascripts/controllers/navCtrl.js"></script>
+	<script src="/javascripts/controllers/homeCtrl.js"></script>
+</body>
+</html>

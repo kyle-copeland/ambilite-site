@@ -1,0 +1,10 @@
+{
+  "name": "ambilite",
+  "version": "0.0.1",
+  "description": "UCI Senior Design Project Website",
+  "main": "server.js",
+  "author": "Kyle Copeland",
+  "dependencies": {
+    "express": "^4.10.4"
+  }
+}
